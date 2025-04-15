@@ -1,16 +1,18 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #B7BEAE;
     scroll-behavior: smooth;
   }
+  
   header {
-    background-color: #343a40;
+    background-color: #23232C;
     color: white;
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
   }
+  
   header h1 {
     margin: 0;
   }
@@ -27,32 +29,38 @@ body {
   nav a:hover {
     text-decoration: underline;
   }
+  
   .hero {
-    background: linear-gradient(to right, #007bff, #0056b3);
+    background: linear-gradient(to right, #63220C, #454647);
     color: white;
     padding: 80px 20px;
     text-align: center;
   }
+  
   .hero h2 {
     font-size: 3rem;
   }
+  
   .testimonial {
-    background: #ffffff;
+    background: #FFFFFF;
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #63220C;
     border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   }
+  
   footer {
-    background-color: #343a40;
+    background-color: #23232C;
     color: white;
     padding: 20px 0;
     text-align: center;
   }
+  
   footer a {
-    color: #ffc107;
+    color: #89856B;
   }
+
   .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.1);
   }
