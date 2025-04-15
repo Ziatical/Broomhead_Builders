@@ -4,17 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Broomhead Builders</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
+  <header class="container-fluid">
+    <div class="container d-flex justify-content-between align-items-center">
       <h1>Broomhead Builders</h1>
       <nav>
-        <ul>
+        <ul class="d-flex">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -25,52 +27,74 @@
   <section id="home" class="hero">
     <div class="container">
       <h2>Quality You Can Build On</h2>
-      <p>Serving the Southern Tier with expert craftsmanship and reliable service.</p>
+      <p>Serving the East Bay of New England with expert craftsmanship and reliable service.</p>
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="py-5">
     <div class="container">
       <h2>About Us</h2>
-      <p>Broomhead Builders is a locally-owned and operated construction company based in the Southern Tier of New York. With a strong reputation for honesty, quality workmanship, and attention to detail, we specialize in home remodeling and building projects tailored to meet your vision. No job is too big or too small—we’re here to bring your ideas to life with integrity and skill.</p>
+      <p>Broomhead Builders is a locally-owned and operated construction company based in the East Bay of New England. With a strong reputation for honesty, quality workmanship, and attention to detail, we specialize in home remodeling and building projects tailored to meet your vision. No job is too big or too small—we’re here to bring your ideas to life with integrity and skill.</p>
     </div>
   </section>
 
-  <section id="services">
+  <section id="services" class="py-5 bg-light">
     <div class="container">
       <h2>Our Services</h2>
-      <ul class="services-list">
-        <li>Complete Home Remodeling</li>
-        <li>Bathroom & Kitchen Renovations</li>
-        <li>Custom Carpentry & Trim Work</li>
-        <li>Deck & Porch Construction</li>
-        <li>Drywall, Painting, and Flooring</li>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Complete Home Remodeling</li>
+        <li class="list-group-item">Bathroom & Kitchen Renovations</li>
+        <li class="list-group-item">Custom Carpentry & Trim Work</li>
+        <li class="list-group-item">Deck & Porch Construction</li>
+        <li class="list-group-item">Drywall, Painting, and Flooring</li>
       </ul>
     </div>
   </section>
 
-  <section id="testimonials">
+  <section id="gallery" class="py-5">
     <div class="container">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonial">
-        <p>"Broomhead Builders transformed our outdated bathroom into a modern oasis. Friendly team and fantastic results!"</p>
-        <strong>- Amanda C.</strong>
-      </div>
-      <div class="testimonial">
-        <p>"Reliable, honest, and highly skilled. I’ve recommended them to all my neighbors!"</p>
-        <strong>- Tom W.</strong>
+      <h2>Gallery</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><img src="/img/example1.jpg" alt="Living room remodel" class="img-fluid" /></div>
+        <div class="col-md-4"><img src="/img/example2.jpg" alt="Company sign with contact info" class="img-fluid" /></div>
+        <div class="col-md-4"><img src="/img/example3.jpg" alt="Porch Remodel" class="img-fluid" /></div>
+        <div class="col-md-4"><img src="/img/example4.jpg" alt="Bathroom Remodel" class="img-fluid" /></div>
+        <div class="col-md-4"><img src="/img/example5.jpg" alt="Custom door installation" class="img-fluid" /></div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial">
+        <p>"They did a wonderful job for a reasonable price. Adam and his brother built the building. They were pleasant and punctual. The shed is absolutely beautiful."</p>
+        <p><strong>Description of Work:</strong> They built a shed for me. They made it match our house.</p>
+        <strong>- Virgina G.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"My son in-law is great We so happy with the work he has done so far in our home God Bless him and his partner Brad the the best we seen so far Thanks 🙏 Josh Broomhead Love you bro"</p>
+        <strong>- Jorge A Lamb</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
     <div class="container">
       <h2>Contact Us</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <form id="contactForm" action="mailto:broomheadwoodworkers@gmail.com" method="POST" enctype="text/plain" class="row g-3">
+        <div class="col-md-6">
+          <input type="text" name="name" placeholder="Your Name" required class="form-control" />
+        </div>
+        <div class="col-md-6">
+          <input type="email" name="email" placeholder="Your Email" required class="form-control" />
+        </div>
+        <div class="col-12">
+          <textarea name="message" placeholder="Your Message" required class="form-control" rows="4"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
       </form>
     </div>
   </section>
@@ -78,9 +102,12 @@
   <footer>
     <div class="container">
       <p>&copy; 2025 Broomhead Builders. All rights reserved.</p>
+      <p>Phone: (401) 439-1614 | Email: broomheadwoodworkers@gmail.com</p>
+      <p><a href="https://www.facebook.com/p/Broomhead-Building-Remodeling-100069307852354/" target="_blank">Visit us on Facebook</a></p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 </html>
