@@ -3,3 +3,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     alert('Thank you for reaching out! We will get back to you soon.');
     this.reset();
 }); 
+// test
